@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tab Audio Transcription</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎙️ Tab Audio Transcription</h1>
+    </header>
+    
+    <main>
+      <div class="status-section">
+        <div id="status" class="status-indicator">
+          <span class="status-dot"></span>
+          <span class="status-text">Ready</span>
+        </div>
+      </div>
+      
+      <div class="controls">
+        <button id="startBtn" class="btn btn-primary">
+          <span class="btn-icon">⏺️</span>
+          Start Recording
+        </button>
+        <button id="stopBtn" class="btn btn-danger" disabled>
+          <span class="btn-icon">⏹️</span>
+          Stop Recording
+        </button>
+      </div>
+      
+      <div class="info-section">
+        <p class="info-text">
+          Click "Start Recording" to capture and transcribe audio from the current tab.
+        </p>
+      </div>
+      
+      <div id="transcriptionSection" class="transcription-section" style="display: none;">
+        <h3>Transcription Result</h3>
+        <div id="transcriptionResult" class="transcription-result">
+          <!-- Transcription will appear here -->
+        </div>
+        <button id="copyBtn" class="btn btn-secondary">
+          <span class="btn-icon">📋</span>
+          Copy to Clipboard
+        </button>
+      </div>
+      
+      <div id="errorSection" class="error-section" style="display: none;">
+        <div class="error-message">
+          <span class="error-icon">⚠️</span>
+          <span id="errorText"></span>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="footer-info">
+        <small>Open source transcription extension for Firefox</small>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

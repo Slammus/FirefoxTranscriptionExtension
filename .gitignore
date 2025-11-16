@@ -1,0 +1,30 @@
+# Node modules (if added later)
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+*.tmp
+*.log
+
+# Package files
+*.zip
+*.xpi
+
+# Environment files
+.env
+.env.local
