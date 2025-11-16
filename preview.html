@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Extension Preview</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f0f0f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .preview-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .popup-preview {
+      width: 400px;
+      margin: 20px auto;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 500px;
+    }
+    .description {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 600px;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-container">
+    <h1>🎙️ Firefox Tab Audio Transcription Extension</h1>
+    
+    <div class="description">
+      <h2>Extension Popup Preview</h2>
+      <p>This is how the extension popup looks when you click the icon in Firefox toolbar.</p>
+    </div>
+    
+    <div class="popup-preview">
+      <iframe src="popup/popup.html"></iframe>
+    </div>
+    
+    <div class="description">
+      <h3>Features Shown:</h3>
+      <ul style="text-align: left;">
+        <li>🎨 Modern, clean interface</li>
+        <li>🔴 Recording controls (Start/Stop)</li>
+        <li>📊 Status indicator with animations</li>
+        <li>📝 Transcription results display</li>
+        <li>📋 Copy to clipboard button</li>
+        <li>⚠️ Error message display</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
